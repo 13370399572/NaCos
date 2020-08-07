@@ -1,0 +1,34 @@
+server:
+  port: 9091
+
+spring:
+  profiles:
+    active: dev # 表示开发环境
+  application:
+    name: nacos-provide
+  cloud:
+    nacos:
+      config:
+        namespace: 5a9f3429-5570-4e50-8969-191cc8fca777
+        group: DEFAULT_GROUP
+        server-addr: localhost:9090 #Nacos作为配置中心地址
+        file-extension: yaml #指定yaml格式的配置
+      discovery:
+        namespace: 97ac27db-2799-49b1-b06e-5de258ef94f8
+        server-addr: localhost:9090
+    #sentinel:
+      #transport:
+        #dashboard: localhost:8080 #配置Sentinel dashboard地址
+        #port: 8719
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+
+# ${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
+# nacos-dev.yaml
+
+# coludalibaba-consumer-demo-dev.yaml   ----> config.info

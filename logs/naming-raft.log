@@ -1,0 +1,20 @@
+2020-07-20 15:30:03,113 INFO raft peers changed: [Member{address='192.168.10.28:8848'}]
+
+2020-07-20 15:30:03,527 INFO initializing Raft sub-system
+
+2020-07-20 15:30:03,530 INFO finish loading all datums, size: 0 cost 2 ms.
+
+2020-07-20 15:30:03,531 INFO raft notifier started
+
+2020-07-20 15:30:03,574 INFO cache loaded, datum count: 0, current term: 0
+
+2020-07-20 15:30:03,574 INFO finish to load data from disk, cost: 46 ms.
+
+2020-07-20 15:30:03,681 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2020-07-20 15:30:07,489 INFO leader timeout, start voting,leader: {"ip":"192.168.10.28:8848","term":0,"leaderDueMs":17377,"heartbeatDueMs":4000,"state":"FOLLOWER"}, term: 0
+
+2020-07-20 15:30:09,743 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2020-07-20 15:30:09,903 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+

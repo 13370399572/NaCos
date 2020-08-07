@@ -1,0 +1,18 @@
+server:
+  port: 9095
+  
+spring:
+  application:
+    name: zull
+  profiles:
+    active: server # 表示开发环境
+  cloud:
+    nacos:
+      config:
+        namespace: 5a9f3429-5570-4e50-8969-191cc8fca777
+        group: zuul_route
+        server-addr: localhost:9090 #Nacos作为配置中心地址
+        file-extension: yaml #指定yaml格式的配置
+      discovery:
+        namespace: 97ac27db-2799-49b1-b06e-5de258ef94f8
+        server-addr: localhost:9090
